@@ -1,178 +1,66 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
 body{
+    font-family: 'Crimson Text', serif;
     background-color: #fffbde;
-    color: #c14d06;
-
 }
 
-/* menú sitio web*/
+/* Diseño menú */
 
-nav {
-    position: sticky;
-    top: 0;
-    background-color: #fffbde;
-    z-index: 100;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
+.colorFondoEspecial{
     background-color:#fffbde;
-    border-bottom: 1px solid #fffbde;
-    height: 40px;
 }
 
-nav a {
-    text-decoration: none;
+.colorPersonalizadoLinks{
     color: #c14d06;
-    padding: 10px 40px;
-}
-
-nav span{
-    font-size: medium;
-    text-align: center;
-}
-/*logo en meneu */
-
-.logo-banner {
-
-    float: right;
-    padding:0;
-    color: #fffbde;
     
 }
 
-
-.logo-banner img{
-    justify-content: space-around;
-    max-width: 100px;
-    height: auto;   
-   z-index: 100;
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
 }
+.navbar-brand {
+    margin-left: 3rem; 
+  }
 
+/* diseño página index */
 
+    /* área del banner */
 
+    .banner-container {
+        position: relative;
+        text-align: left;
+    }
 
- /* Estilo de la página inicio */
+    .banner-img {
+        width: 100%;
+        max-height:100%; 
+        
+    }
+    .text-overlay {
+        position: absolute;
+        top: 50%; 
+        left: 30%; 
+        transform: translate(-50%, -50%); 
+        background-color: rgba(255, 255, 255, 0.746); 
+        padding: 20px; 
+        color: #c14d06;
+    }
 
-.banner1 img {
-    max-width: 100%; 
-    height: auto;
-}
+ /* diseño página conozcanos */
 
- /* Estilo de la pagina de menú */
+ .img-fluid {
 
-.menu-item {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    gap: 20px;
-    max-width: 1000px; 
-    margin: 0 auto;
-}
-
-.menu-item {
-    background-color:none;
-    border: 1px solid #ddd;
-    padding: 20px;
-    text-align: center;
-    flex: 1;
-    max-width: calc(33.333% - 40px);
-    box-sizing: border-box;
-    border: #f4d8ab;
-}
-
-.menu-item img {
-    max-width: 100%;
-}
-
-.menu-item h3 {
-    font-size: 1.5rem;
-    margin-top: 10px;
-    text-align: center;
-    
-}
-
-.menu-item p {
-    font-size: 1rem;
-    color: #5d3804;
-}
-
-.menu-item span {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #333;
-}
-
-
-
-
-
-
-
- /* Estilo de la página conozcanos*/
-
-.foto-inicial-carrusel img{
-    max-width: 100%; 
-    height: auto;
-}
-
-/* Estilo página mapa */
-
-.mapa_soda{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
 
 }
 
+.agregandoPadding{
 
-
-
- /* Estilo de la página de contáctenos */
-
-.formulario_contacto {
-    max-width: 600px; 
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f4d8ab;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
-        /* estilo de las etiquetaas */
-            form label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-
-        /* estilo de los espacios*/
-
-            form input[type="text"],
-            form input[type="tel"],
-            form input[type="email"],
-            form textarea {
-                width: 100%;
-                padding: 5px;
-                margin-bottom: 15px;
-                border: 1px solid #ccc;
-                border-radius: 3px;
-            }
-
-        /* estilo del botón */
-            form input[type="submit"] {
-                background-color: hsl(32, 100%, 50%);
-                color: #fff;
-                border: none;
-                padding: 10px 20px;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-

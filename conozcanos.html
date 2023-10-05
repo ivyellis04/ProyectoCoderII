@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
-<<head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <title>Conzócanos</title>
-    
-    <link rel="stylesheet" type="text/css" href="./estilo.css">
 
     <!--Iconos fontawesome-->
     <script src="https://kit.fontawesome.com/17a78ebd6f.js" crossorigin="anonymous"></script>
 
     <!-- favicon-->
     <link rel="icon" type="image/png" href="./Favicon/favicon.ico">
+
+    <!-- Link Boostrap-->
+    <link rel= "stylesheet" href="./bootstrap proyecto/css/bootstrap.css">
+
+    <!-- Link Css-->
+    <link rel="stylesheet" type="text/css" href="./estilo.css">
 
 </head>
 
@@ -20,93 +24,139 @@
 <body>
   
 <!-- inicio encabezado-->
-<header class="cabecera">
-   
-    <!-- inicio menu sitio -->
-    <nav class="menu_sitio_web">
-  
-      <!-- logo -->
-  
-      <div class="logo-banner">
-  
-          <img id="top" src="./assets/logov1.png" alt="logo sitio">
-  
-      </div>
-  
-      <ul>
-          <li class="link"><a href="index.html">Inicio</a></li>
-          <li class="link"><a href="conozcanos.html">Conóscanos</a></li>
-          <li class="link"><a href="menu.html">Menú</a></li>
-          <li class="link"><a href="mapa.html">¿Cómo llegar?</a></li>
-          <li class="link"><a href="contactenos.html">Contactenos</a></li>
-      </ul>
-  
-  
-      </nav>
+<header>
 
-      
-<!--Acá va el el carrusel-->
+    <div class="container-fluid"> 
+ 
+         <!--inicio menu sitio-->
+ 
+         <nav class="navbar navbar-expand-lg colorFondoEspecial">
+         <div class= "container-fluid">
+ 
+         <!-- logo -->
+ 
+             <a class="navbar-brand" href="./index.html"> <img src="./assets/fotos logobanner/menudesktop.png" alt="logo sitio"  width="70" height="30"></a> 
 
-<div class="foto-inicial-carrusel">
-    <img src="./assets/foto-soda.jpeg" alt="foto_inicial">
+          <!-- botón responsive -->    
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+ 
+             <span class="navbar-toggler-icon"> </span>
+ 
+             </button>
+ 
+             <div class="collapse navbar-collapse" id= "navbarNav">
+ 
+         <!--Links menu-->
+ 
+         <ul class= "navbar-nav nav nav-pills nav-justified me-auto mb-2 mb-1g-0 w-100 justify-content-between">
+ 
+            <li class="nav-item"> 
+                <a href="index.html"class="text-decoration-none colorPersonalizadoLinks">Inicio</a></li>
 
+            <li class="nav-item">
+                 <a href="conozcanos.html" class="text-decoration-none colorPersonalizadoLinks">Conózcanos</a></li>
 
-</div>
+            <li class="nav-item text-decoration-none"> 
+                <a href="menu.html" class="text-decoration-none colorPersonalizadoLinks">Menú</a></li>
+
+            <li class="nav-item"> 
+                <a href="mapa.html" class="text-decoration-none colorPersonalizadoLinks">¿Cómo llegar?</a></li>
+                
+            <li class="nav-item"> 
+                <a href="contactenos.html"class="text-decoration-none colorPersonalizadoLinks">Contactenos</a></li>
+                
+             </ul>  
+ 
+             </div>
+ 
+ </header>
+
 
   
         <!-- contenido texto -->
-    <div class="contenido">
-        <div id="conozcanos">
-            
+
+
+        <div class="py-5 text-center container">
+        <main role="main" class="inner cover justify-content-center">
+            <h1 class="cover-heading">Conózcanos</h1>
+            <p class="lead">En Soda La Uruca, se come de pie y se come riquísimo.
+                Vení a probarlo todo, desde nuestro famoso "gallo de salchichón con torta de huevo" hasta el tradicional "casado" con la infaltable chilera de la casa, cada elección en nuestro menú es un placer para el paladar.</p>
+            <p class="lead">
+              
+            </p>
+          </main>
         </div>
+
+       
+        <div class="py-5 text-center container">
+            <div class="row col-lg-8 justify-content-center">
+                <img class="" src="./assets/fotosmenu/platillos.jpg" alt="platillos del menú" width="100%">
+
+        </div>
+               
+        
+
+   
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="bg-light bg-opacity-75 p-3">
     
-        <!-- Parrafosy articulos -->    
-        <div>
-            <section>
-                <article>
-                    <h1>Conózcanos</h1>
-
-                    <p class="tamañoMediano">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, accusamus in dolorum expedita voluptatum
-                        facilis quo. Eum distinctio, quisquam facilis earum exercitationem quam totam recusandae quae dolores,
-                        nesciunt ducimus sequi, qui fugiat eligendi? Ad commodi, saepe cum voluptates aliquid explicabo!</p>
-                    <p>Voluptatem tenetur itaque, ratione impedit aperiam consequatur cupiditate cumque necessitatibus fugit
-                        voluptatum accusamus ipsam doloremque laborum. Reprehenderit nisi quidem ea assumenda, beatae, inventore
-                        cumque officia minima quis provident illo tempora quo perspiciatis doloribus. Aspernatur in
-                        exercitationem aliquam quae eius veritatis.</p>
-                    <p>Sequi, distinctio fugiat! Sapiente ipsum corrupti eaque veritatis laborum enim dolorum, eos dolore
-                        ducimus suscipit aut molestias assumenda aliquam numquam voluptatum et cum perferendis deleniti facilis
-                        atque mollitia, reiciendis iste officia dignissimos. Aliquam sed magnam cum distinctio officiis quidem
-                        consequatur.</p>
-                    <img src="./assets/img/header2.jpg" alt="">
-                </article>
-        
-                <article>
-                    <h2>Nuestra historia</h2>
-                    <p class="tamañoMediano">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, accusamus in dolorum expedita voluptatum
-                        facilis quo. Eum distinctio, quisquam facilis earum exercitationem quam totam recusandae quae dolores,
-                        nesciunt ducimus sequi, qui fugiat eligendi? Ad commodi, saepe cum voluptates aliquid explicabo!</p>
-                    <p>Voluptatem tenetur itaque, ratione impedit aperiam consequatur cupiditate cumque necessitatibus fugit
-                        voluptatum accusamus ipsam doloremque laborum. Reprehenderit nisi quidem ea assumenda, beatae, inventore
-                        cumque officia minima quis provident illo tempora quo perspiciatis doloribus. Aspernatur in
-                        exercitationem aliquam quae eius veritatis.</p>
-                    <p>Sequi, distinctio fugiat! Sapiente ipsum corrupti eaque veritatis laborum enim dolorum, eos dolore
-                        ducimus suscipit aut molestias assumenda aliquam numquam voluptatum et cum perferendis deleniti facilis
-                        atque mollitia, reiciendis iste officia dignissimos. Aliquam sed magnam cum distinctio officiis quidem
-                        consequatur.</p>
-                    <img src="./assets/img/header3.jpg" alt="">
-                </article>
-            </section>
-        
-        </div>
-
-    <!-- Carrusel con fotos -->
+                    <p class="text-justify"> Hace casi seis décadas, en el corazón del barrio de La Uruca, en las afueras de San José, Costa Rica, una mujer apasionada por la cocina costarricense y sus sabores auténticos decidió emprender una aventura culinaria que dejaría una huella imborrable en la comunidad. Esta mujer valiente y conocida como Doña Haydeé se convertiría en la fundadora de un lugar icónico: "Soda La Uruca.” </p>
             
+                    <p class="text-justify"> Doña Haydeé era renombrada en su vecindario por sus dotes culinarios, especialmente por sus recetas secretas de la tradicional comida costarricense. Un día, inspirada por el deseo de compartir su amor por la comida típica, decidió abrir las puertas de su soda en 1964. Así nació "Soda La Uruca.” </p>
+                                
+                    <p class="text-justify"> Desde el principio, Soda La Uruca se destacó por servir auténtica comida costarricense, preparada con ingredientes frescos y recetas transmitidas de generación en generación. Sin embargo, lo que realmente se convirtió en el sello distintivo de la soda y su mayor orgullo fue el "gallo de salchichón con torta de huevo”. </p>
+                                
+                    <p class="text-justify"> El "gallo de salchichón con torta de huevo" de Soda La Uruca se volvió una sensación en la comunidad. Era un platillo que representaba la esencia misma de la comida costarricense: sabroso, casero y lleno de tradición. La torta de huevo, hecha con huevos frescos y sazonada con ingredientes secretos de la familia, combinada con el delicioso salchichón, servido en un pan recién horneado, era una experiencia culinaria única que atraía a comensales de todas partes. </p>
+                                
+                    <p class="text-justify"> A medida que los años avanzaron, la fama de Soda La Uruca y su icónico "gallo de salchichón con torta de huevo" se extendió más allá de La Uruca y se convirtió en un destino gastronómico de renombre en todo Costa Rica. La receta secreta y la pasión de Doña Haydeé fueron transmitidas a sus nietos, quienes se encargaron de mantener la tradición viva. </p>
+                                
+                    <p class="text-justify"> Hoy en día, Soda La Uruca continúa sirviendo el "gallo de salchichón con torta de huevo" tal como lo hacía Doña Haydeé en sus comienzos. Es un lugar querido por los costarricenses y los visitantes que buscan degustar un pedazo de la auténtica cocina costarricense y experimentar la calidez y el ambiente familiar que han sido una parte fundamental de la historia de la soda desde 1964. La tradición sigue siendo fuerte, y el "gallo de salchichón con torta de huevo" es un tesoro gastronómico que representa la riqueza de la comida tradicional costarricense. </p>
+                          
+                    
+            </div>
+                </div>
+                    </div>
+                        </div>
 
+
+
+      
+
+    
+<!-- Footer  -->
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 my-5 pt-5">
+
+          <!-- Enlace de Instagram -->
+          <a href="https://www.instagram.com/sodalauruca/" target="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <!-- Enlace de Facebook -->
+          <a href="https://www.facebook.com/p/Soda-La-Uruca-La-Original-100064279840065/" target="facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+        <div class="col-md-6">
+          <!-- Otra información en tu footer -->
+        </div>
+      </div>
     </div>
-    
-     <!-- Footer  -->
-<footer>
-    <p>&copy; 2023 Soda La Uruca</p>
-</footer>
+  
+    <div class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">&copy; 2023 Soda La Uruca</p>
+    </div>
+  </footer>
+  
+
+
+
+
+<script src="./bootstrap proyecto/js/bootstrap.bundle.min.js"></script>
 
 </body>

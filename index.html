@@ -3,9 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-    <title>Soda La Uruca</title>
-
-    <link rel="stylesheet" type="text/css" href="./estilo.css">
+    <title>Soda La Uruca inicio</title>
 
     <!--Iconos fontawesome-->
     <script src="https://kit.fontawesome.com/17a78ebd6f.js" crossorigin="anonymous"></script>
@@ -13,67 +11,154 @@
     <!-- favicon-->
     <link rel="icon" type="image/png" href="./Favicon/favicon.ico">
 
+    <!-- Link Boostrap-->
+    <link rel= "stylesheet" href="./bootstrap proyecto/css/bootstrap.css">
+
+    <!-- Link Css-->
+    <link rel="stylesheet" type="text/css" href="./estilo.css">
+
+
 </head>
 
 
-
 <body>
-  
+
+ <div class="container-fluid">  
 
 <!-- inicio encabezado-->
-<header class="cabecera">
-   
-  <!-- inicio menu sitio -->
-  <nav class="menu_sitio_web">
+<header>
 
-    <!-- logo -->
+   <div class="container-fluid"> 
 
-    <div class="logo-banner">
+        <!--inicio menu sitio-->
 
-        <img id="top" src="./assets/logov1.png" alt="logo sitio">
+        <nav class="navbar navbar-expand-lg colorFondoEspecial sticky-top">
+        <div class= "container-fluid">
 
-    </div>
+        <!-- logo -->
 
-    <ul>
-        <li class="link"><a href="index.html">Inicio</a></li>
-        <li class="link"><a href="conozcanos.html">Conóscanos</a></li>
-        <li class="link"><a href="menu.html">Menú</a></li>
-        <li class="link"><a href="mapa.html">¿Cómo llegar?</a></li>
-        <li class="link"><a href="contactenos.html">Contactenos</a></li>
-    </ul>
+            <a class="navbar-brand" href="./index.html"> <img src="./assets/fotos logobanner/menudesktop.png" alt="logo sitio"  width="70" height="30"></a> 
 
+         <!-- botón responsive -->    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 
-    </nav>
+            <span class="navbar-toggler-icon"> </span>
 
+            </button>
 
-    <!-- Titulo sitio-->
-       <h1> <em> Soda La Uruca </em></h1>
+            <div class="collapse navbar-collapse" id= "navbarNav">
+
+        <!--Links menu-->
+
+        <ul class= "navbar-nav nav nav-pills nav-justified me-auto mb-2 mb-1g-0 w-100 justify-content-between">
+ 
+            <li class="nav-item"> 
+                <a href="index.html"class="text-decoration-none colorPersonalizadoLinks">Inicio</a></li>
+
+            <li class="nav-item">
+                 <a href="conozcanos.html" class="text-decoration-none colorPersonalizadoLinks">Conózcanos</a></li>
+
+            <li class="nav-item text-decoration-none"> 
+                <a href="menu.html" class="text-decoration-none colorPersonalizadoLinks">Menú</a></li>
+
+            <li class="nav-item"> 
+                <a href="mapa.html" class="text-decoration-none colorPersonalizadoLinks">¿Cómo llegar?</a></li>
+                
+            <li class="nav-item"> 
+                <a href="contactenos.html"class="text-decoration-none colorPersonalizadoLinks">Contactenos</a></li>
+
+            </ul>  
+
+            </div>
 
 </header>
 
+<main>
 
+    <div class="container"> 
 
 <!-- área del banner  -->
 
-    <div class="banner1">
-     <img src="./assets/logo_banner.png" alt="banner principal">
-        <h1>COPY CONCEPTUAL</h1>
-        <p>Voluptatem tenetur itaque, ratione impedit aperiam consequatur cupiditate cumque necessitatibus fugit voluptatum accusamus ipsam doloremque laborum. Reprehenderit nisi quidem ea assumenda, beatae, 
-            inventore cumque officia minima quis provident illo tempora quo perspiciatis doloribus. Aspernatur in exercitationem aliquam quae eius veritatis. </p>
+    <div class="banner-container">
+        <img src="./assets/fotos logobanner/banner2.png" alt="Banner" class="banner-img">
+
+        <div class="text-overlay">
+
+            <h1>Seis decadas de hacer los gallitos 
+                más íconicos de San José</h1>
+
+            <p class="blockquote">¡Te damos la bienvenida a Soda la Uruca o mejor conicida como la "Culo con Culo". 
+                Haz tu pedido y disfrutá del sabor auténtico de Costa Rica en cada platillo! </p>
+        </div>
     </div>
+
 
 <!-- área de introducción-->
 
-    <div>
+    <div class="container justify-content-center">
+        <div class="row row-cols-3">
+
+        <div class="col md-4 bg-transparent">
+            <h3>Tradición</h3>
+            <p> En Soda La Uruca, honramos nuestras raíces culinarias, manteniendo vivas las recetas desde nuestros inicios en 1964.</p>
+        </div>
+       
+
+        <div class="col md-4 bg-transparent">
+            
+            <h3>Sabor casero</h3> 
+        
+            <p> Nuestra comida se caracteriza por su autenticidad y frescura, brindando un sabor casero que te hace sentir como en casa.</p>
+        </div>
+        
+
+        <div class="col md-4 bg-transparent">
+
+            <h3>Comida rápida autóctona</h3> 
+
+            <p> Ofrecemos platos autóctonos costarricenses que son deliciosos, permitiéndote disfrutar de la auténtica comida local sin demoras</p>
+
+        </div>
+        </div>
+  </div>
 
 
 
     </div>
+</main>
+
+</div> 
 
 <!-- Footer  -->
-<footer class="footer">
-    <p>&copy; 2023 Soda La Uruca</p>
-</footer>
+
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center">
+
+          <!-- Enlace de Instagram -->
+          <a href="https://www.instagram.com/sodalauruca/" target="Intagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <!-- Enlace de Facebook -->
+          <a href="https://www.facebook.com/p/Soda-La-Uruca-La-Original-100064279840065/" target="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+
+        <div class="col-md-6 text-muted text-center text-small">
+          <!-- Derechos de autor -->
+          <div class="my-5 pt-5">
+            <p class="mb-1">&copy; 2023 Soda La Uruca</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+     
+
+<script src="./bootstrap proyecto/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 

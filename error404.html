@@ -4,8 +4,6 @@
    
     <title>Página de Error</title>
     
-    <link rel="stylesheet" type="text/css" href="./estilo.css">
-
     <!--Iconos fontawesome-->
     <script src="https://kit.fontawesome.com/17a78ebd6f.js" crossorigin="anonymous"></script>
 
@@ -13,33 +11,67 @@
     <!-- favicon-->
     <link rel="icon" type="image/png" href="./Favicon/favicon.ico">
 
+   <!-- Link Boostrap-->
+   <link rel= "stylesheet" href="./bootstrap proyecto/css/bootstrap.css">
+
+   <!-- Link Css-->
+   <link rel="stylesheet" type="text/css" href="./estilo.css">
+
 </head>
 
 
 
 <body>
-        
-    <!--texto error-->
-    <div class="mensaje-error">
-        <h1>Error 404</h1>
-        <p>¡Oops! Esta página no existe. </p>
+     
+    <div class="column-fluid">
+
+        <!--texto error-->
+        <div class="column">
+            <h1>Error 404</h1>
+            <p>¡Oops! Esta página no existe. </p>
+        </div>
+
+
+        <div class="link-de-inicio">
+            <li><a href="index.html">Volver a la página de inicio</a></li>
+
+        </div>
     </div>
 
 
-    <div class="link-de-inicio">
-        <li><a href="index.html">Volver a la página de inicio</a></li>
+<!-- Footer  -->
 
+<footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 text-center">
 
+          <!-- Enlace de Instagram -->
+          <a href="https://www.instagram.com/sodalauruca/" target="Intagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <!-- Enlace de Facebook -->
+          <a href="https://www.facebook.com/p/Soda-La-Uruca-La-Original-100064279840065/" target="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+
+        <div class="col-md-6 text-muted text-center text-small">
+         
+            <!-- Derechos de autor -->
+          <div class="my-5 pt-5">
+            <p class="mb-1">&copy; 2023 Soda La Uruca</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </footer>
+     
 
-
-    <!-- Footer  -->
-
-    <footer class="footer">
-
-        <p>&copy; 2023 Soda La Uruca</p>
-        
-    </footer>
+    <script src="./bootstrap proyecto/js/bootstrap.bundle.min.js"></script>
  
 </body>
+
+
 </html>
