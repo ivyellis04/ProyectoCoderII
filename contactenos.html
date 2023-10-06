@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <title>Soda La Uruca</title>
@@ -16,7 +16,6 @@
 
     <!-- Link Css-->
     <link rel="stylesheet" type="text/css" href="./estilo.css">
-
 </head>
 
 
@@ -25,65 +24,139 @@
 <!-- inicio encabezado-->
 <header>
 
-    <div class="container-fluid"> 
- 
-         <!--inicio menu sitio-->
- 
-         <nav class="navbar navbar-expand-lg colorFondoEspecial">
-         <div class= "container-fluid">
- 
-         <!-- logo -->
- 
-             <a class="navbar-brand" href="#"> <img src="./assets/fotos logobanner/menudesktop.png" alt="logo sitio"  width="70" height="30"></a> 
- 
-          <!-- botón responsive -->    
-             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
- 
-             <span class="navbar-toggler-icon"> </span>
- 
-             </button>
- 
-             <div class="collapse navbar-collapse" id= "navbarNav">
- 
-         <!--Links menu-->
- 
-             <ul class= "navbar-nav nav nav-pills nav-justified me-auto mb-2 mb-1g-0 w-100 justify-content-between">
- 
-                 <li class="nav-item"> 
-                     <a href="index.html"class="text-decoration-none colorPersonalizadoLinks">Inicio</a></li>
- 
-                 <li class="nav-item">
-                      <a href="conozcanos.html" class="text-decoration-none colorPersonalizadoLinks">Conózcanos</a></li>
- 
-                 <li class="nav-item text-decoration-none"> 
-                     <a href="menu.html" class="text-decoration-none colorPersonalizadoLinks">Menú</a></li>
- 
-                 <li class="nav-item"> 
-                     <a href="mapa.html" class="text-decoration-none colorPersonalizadoLinks">¿Cómo llegar?</a></li>
-                     
-                 <li class="nav-item"> 
-                     <a href="contactenos.html"class="text-decoration-none colorPersonalizadoLinks">Contactenos</a></li>
- 
-             </ul>  
- 
-             </div>
- 
- </header>
+  <div class="container-fluid"> 
 
+       <!--inicio menu sitio-->
+
+       <nav class="navbar navbar-expand-lg colorFondoEspecial sticky-top">
+       <div class= "container-fluid">
+
+       <!-- logo -->
+
+           <a class="navbar-brand" href="./index.html"> <img src="./assets/fotos logobanner/banner_color2.png" alt="logo sitio"  width="70" height="30"></a> 
+
+        <!-- botón responsive -->    
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+           <span class="navbar-toggler-icon"> </span>
+
+           </button>
+
+           <div class="collapse navbar-collapse" id= "navbarNav">
+
+       <!--Links menu-->
+
+       <ul class= "navbar-nav nav nav-pills nav-justified me-auto mb-2 mb-1g-0 w-100 justify-content-between">
+
+           <li class="nav-item"> 
+               <a href="index.html"class="text-decoration-none colorPersonalizadoLinks">Inicio</a></li>
+
+           <li class="nav-item">
+                <a href="conozcanos.html" class="text-decoration-none colorPersonalizadoLinks">Conózcanos</a></li>
+
+           <li class="nav-item text-decoration-none"> 
+               <a href="menu.html" class="text-decoration-none colorPersonalizadoLinks">Menú</a></li>
+
+           <li class="nav-item"> 
+               <a href="mapa.html" class="text-decoration-none colorPersonalizadoLinks">¿Cómo llegar?</a></li>
+               
+           <li class="nav-item"> 
+               <a href="contactenos.html"class="text-decoration-none colorPersonalizadoLinks">Contactenos</a></li>
+
+           </ul>  
+
+           </div>
+
+</header>
+
+<main>
 
  <!--Inicio de formulario -->
 
+ <div class="container mx-auto mt-5">
+  <h2 class="text-center">¿Necesitás un pedido especial?</h2>
+  <p class="text-center">Dejanos los datos y nosotros te contactamos.</p>
+  <form action="procesar_formulario.php" method="POST">
+      <!-- Campo Nombre -->
+      <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required>
+      </div>
+
+      <!-- Campo Correo -->
+      <div class="form-group">
+          <label for="correo">Correo Electrónico:</label>
+          <input type="email" class="form-control" id="correo" name="correo" required>
+      </div>
+
+      <!-- Campo Teléfono -->
+      <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" class="form-control" id="telefono" name="telefono" required>
+      </div>
+
+      <!-- Campo Comentario -->
+      <div class="form-group">
+          <label for="comentario">Comentario:</label>
+          <textarea class="form-control" id="comentario" name="comentario" rows="4" required></textarea>
+      </div>
+
+      <!-- Campo Provincia (Desplegable) -->
+      <div class="form-group">
+          <label for="provincia">Provincia:</label>
+          <select class="form-control" id="provincia" name="provincia" required>
+              <option value="" selected disabled>Seleccione una provincia</option>
+              <option value="San Jose">San José</option>
+              <option value="Alajuela">Alajuela</option>
+              <option value="Heredia">Heredia</option>
+              <option value="Cartago">Cartago</option>
+              <option value="Guanacaste">Guanacaste</option>
+              <option value="Puntarenas">Puntarenas</option>
+              <option value="Limón">Limón</option>
+          </select>
+      </div>
+
+      <!-- Botón de Envío -->
+      <button type="submit" class="btn colorPaletaEspecial btn-block py-2">Enviar</button>
+  </form>
+</div>
 
 
-
-
-    <!-- Footer  -->
+</main>
+<!-- Footer  -->
 <footer>
-    
-    <div class="row"> 
+  <div class="container">
+    <div class="row">
+      <!-- Columna 1 -->
+      <div class="col-md-6 my-3">
+        <!-- Enlace de Instagram -->
+        <a class="d-flex align-items-center" href="https://www.instagram.com/sodalauruca/" target="Instagram">
+          <img src="./assets/fotos logobanner/instagram.png" alt="Logo de Instagram" class="img-fluid" style="width: 35px; margin-right: 5px;">
+          <span class="text-muted small text-break">
+            <a href="https://www.flaticon.es/iconos-gratis/instagram" title="instagram iconos" class="text-muted" style="font-size: xx-small;">Instagram iconos creados por Freepik - Flaticon</a>
+          </span>
+        </a>
+      </div>
+      <!-- Columna 2 -->
+      <div class="col-md-6 my-3">
+        <!-- Enlace de Facebook -->
+        <a class="d-flex align-items-center" href="https://www.facebook.com/p/Soda-La-Uruca-La-Original-100064279840065/" target="facebook">
+          <img src="./assets/fotos logobanner/facebook.png" alt="Logo de Facebook" class="img-fluid" style="width: 35px; margin-right: 5px;">
+          <span class="text-muted small text-break">
+            <a href="https://www.flaticon.es/iconos-gratis/facebook" title="facebook iconos" class="text-muted" style="font-size: xx-small;">Facebook iconos creados por Stockio - Flaticon</a>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
 
-        &copy; 2023 Soda La Uruca
+  <div class=" text-muted text-center text-small">
+    <p class="mb-1">&copy; 2023 Soda La Uruca</p>
+  </div>
 </footer>
+
+         
+
 
 <script src="./bootstrap proyecto/js/bootstrap.bundle.min.js"></script>
 

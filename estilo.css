@@ -1,21 +1,26 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
-body{
+body {
     font-family: 'Crimson Text', serif;
     background-color: #fffbde;
 }
 
-/* Diseño menú */
-
-.colorFondoEspecial{
-    background-color:#fffbde;
+/* Enlaces */
+a:link {
+    color: #D99962;
 }
 
-.colorPersonalizadoLinks{
+a:hover {
+    color: #F26835;
+}
+
+/* Diseño menú */
+.colorFondoEspecial {
+    background-color:#F2CEA2;
+}
+
+.colorPersonalizadoLinks {
     color: #c14d06;
-    
 }
 
 .container-fluid {
@@ -23,29 +28,91 @@ body{
     padding-right: 0;
 }
 .navbar-brand {
-    margin-left: 3rem; 
+    margin-left: 3rem;
+
+}
+
+.custom-navbar {
+    background-color: #FF5733;
+}
+
+/* Diseño página index */
+/* Área del banner */
+.banner-container {
+    position: relative;
+    text-align: left;
+}
+
+.banner-img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: #fffbde;
+    padding: 20px;
+    color: #c14d06;
+}
+
+/* Área de introducción */
+.bg-custom {
+    background-color: #F2EDD5;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Diseño página conozcanos */
+.img-fluid {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.agregandoPadding {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Diseño página mapa */
+.map-container {
+    position: relative;
+    padding-bottom: 75%; 
+    overflow: hidden;
   }
+  
+  .map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
 
-/* diseño página index */
 
-    /* área del banner */
 
-    .banner-container {
-        position: relative;
-        text-align: left;
-    }
+/* Diseño página contactenos */
+.colorPaletaEspecial {
+    background-color: #F26835;
+    border-color: #F26835;
+    color: #fff;
+}
 
-    .banner-img {
-        width: 100%;
-        max-height:100%; 
-        
-    }
-    .text-overlay {
-        position: absolute;
-        top: 50%; /* Coloca el texto en el centro vertical */
-        left: 30%; /* Coloca el texto en el centro horizontal */
-        transform: translate(-50%, -50%); /* Centra el texto */
-        background-color: rgba(255, 255, 255, 0.746); /* Fondo semitransparente para el texto */
-        padding: 20px; /* Espaciado interno para el texto */
-        color: #c14d06; /* Color del texto */
-    }
+footer {
+    background-color: #F2CEA2;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+/* Enlaces en el footer */
+footer a:link {
+    color: #D99962;
+}
+
+footer a:hover {
+    color: #F26835;
+}

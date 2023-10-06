@@ -25,110 +25,162 @@
 <!-- inicio encabezado-->
 <header>
 
-    <div class="container-fluid"> 
- 
-         <!--inicio menu sitio-->
- 
-         <nav class="navbar navbar-expand-lg colorFondoEspecial">
-         <div class= "container-fluid">
- 
-         <!-- logo -->
- 
-             <a class="navbar-brand" href="#"> <img src="./assets/fotos logobanner/menudesktop.png" alt="logo sitio"  width="70" height="30"></a> 
- 
-          <!-- botón responsive -->    
-             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
- 
-             <span class="navbar-toggler-icon"> </span>
- 
-             </button>
- 
-             <div class="collapse navbar-collapse" id= "navbarNav">
- 
-         <!--Links menu-->
- 
-         <ul class= "navbar-nav nav nav-pills nav-justified me-auto mb-2 mb-1g-0 w-100 justify-content-between">
- 
-            <li class="nav-item"> 
-                <a href="index.html"class="text-decoration-none colorPersonalizadoLinks">Inicio</a></li>
+  <div class="container-fluid"> 
 
-            <li class="nav-item">
-                 <a href="conozcanos.html" class="text-decoration-none colorPersonalizadoLinks">Conózcanos</a></li>
+       <!--inicio menu sitio-->
 
-            <li class="nav-item text-decoration-none"> 
-                <a href="menu.html" class="text-decoration-none colorPersonalizadoLinks">Menú</a></li>
+       <nav class="navbar navbar-expand-lg colorFondoEspecial sticky-top">
+       <div class= "container-fluid">
 
-            <li class="nav-item"> 
-                <a href="mapa.html" class="text-decoration-none colorPersonalizadoLinks">¿Cómo llegar?</a></li>
-                
-            <li class="nav-item"> 
-                <a href="contactenos.html"class="text-decoration-none colorPersonalizadoLinks">Contactenos</a></li>
+       <!-- logo -->
+
+           <a class="navbar-brand" href="./index.html"> <img src="./assets/fotos logobanner/banner_color2.png" alt="logo sitio"  width="70" height="30"></a> 
+
+        <!-- botón responsive -->    
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+           <span class="navbar-toggler-icon"> </span>
+
+           </button>
+
+           <div class="collapse navbar-collapse" id= "navbarNav">
+
+       <!--Links menu-->
+
+       <ul class= "navbar-nav nav nav-pills nav-justified me-auto mb-2 mb-1g-0 w-100 justify-content-between">
+
+           <li class="nav-item"> 
+               <a href="index.html"class="text-decoration-none colorPersonalizadoLinks">Inicio</a></li>
+
+           <li class="nav-item">
+                <a href="conozcanos.html" class="text-decoration-none colorPersonalizadoLinks">Conózcanos</a></li>
+
+           <li class="nav-item text-decoration-none"> 
+               <a href="menu.html" class="text-decoration-none colorPersonalizadoLinks">Menú</a></li>
+
+           <li class="nav-item"> 
+               <a href="mapa.html" class="text-decoration-none colorPersonalizadoLinks">¿Cómo llegar?</a></li>
+               
+           <li class="nav-item"> 
+               <a href="contactenos.html"class="text-decoration-none colorPersonalizadoLinks">Contactenos</a></li>
+
+           </ul>  
+
+           </div>
+
+</header>
+
  
-             </ul>  
- 
-             </div>
- 
- </header>
 
- <main>
-           <!--Area del mapa de la soda --> 
-           <div class="mapa_soda">
+  <main class="container">
 
-                <h1>¿Cómo llegar?</h1>
+     <!-- Introducción a la página-->
 
-                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d329.75424389008435!2d-84.09831328254221!3d9.9487663921165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e4ada3947693%3A0xc07932bab2af10d5!2sSoda%20Uruca!5e0!3m2!1sen!2scr!4v1693941037262!5m2!1sen!2scr
-                 " width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light"> ¿Cómo llegar?</h1>
+        </div>
+      </div>
+    </section>
+
+   
+    <!-- Area del mapa de la soda -->
+    <div class="row">
+       
+        <div class="col-md-6 mx-4">
+
+            <h2>Mapa</h2>
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d329.75424389008435!2d-84.09831328254221!3d9.9487663921165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e4ada3947693%3A0xc07932bab2af10d5!2sSoda%20Uruca!5e0!3m2!1sen!2scr!4v1693941037262!5m2!1sen!2scr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-
-            <!--Area de direcciones-->
-            <div class="indicaciones_y_horario">
-                <p>
-                    La Uruca, San José
-                </p>
-
-                <p>
-                    (+506) 12345678
-                </p>
-
-                <p>
-                    www.lasodita.com
-                </p>
-
-                <p>
-                    Lunes-sabado: 8am-3pm 
-                    Domingos: 9am-12pm
-                </p>
-            </div>
-
- </main>
+            
+        
+       
+        <!-- Area de direcciones -->
+        <div class="col-md-6 mx-4">
+            <h2>Contacto</h2>
+            <p>La Uruca, San José</p>
+            <p>(+506) 12345678</p>
+            <p>www.lasodita.com</p>
+            <p>Lunes-sábado: 8am-3pm</p>
+            <p>Domingos: 9am-12pm</p>
+        </div>
+    </div>
 
 
-            <!-- Sección de Reseñas -->
-            <div id="reseñas_usuarios">
-                <h2>Reseñas</h2>
+ <!-- Introducción a la página-->
+
+ <section class="py-5 text-center container">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-light"> ¡Escuchá de nuestros clientes!</h1>
+    </div>
+  </div>
+</section>
+    
+    <!-- Sección de Reseñas -->
+    <div>
+        <h2>Reseñas</h2>
+        <div class="row">
+            <div class="col-md-6 mx-4">
                 <div class="reseña">
                     <h3>John Doe</h3>
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
                 </div>
-
+            </div>
+            
+            <div class="col-md-6 mx-4">
                 <div class="reseña">
                     <h3>Jane Doe</h3>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla commodo eleifend. 
-                        Donec sit amet lectus malesuada, tempus tellus vel, mattis urna. 
-                        Nunc fermentum libero vitae nibh consequat, non aliquam lectus ullamcorper. "</p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla commodo eleifend. Donec sit amet lectus malesuada, tempus tellus vel, mattis urna. Nunc fermentum libero vitae nibh consequat, non aliquam lectus ullamcorper."</p>
                 </div>
             </div>
+        </div>
+    </div>
+</main>
+
+
+
+
     
 
- <!-- Footer  -->
+<!-- Footer  -->
+
 <footer>
+  <div class="container">
+    <div class="row">
+      <!-- Columna 1 -->
+      <div class="col-md-6 my-3">
+        <!-- Enlace de Instagram -->
+        <a class="d-flex align-items-center" href="https://www.instagram.com/sodalauruca/" target="Instagram">
+          <img src="./assets/fotos logobanner/instagram.png" alt="Logo de Instagram" class="img-fluid" style="width: 35px; margin-right: 5px;">
+          <span class="text-muted small text-break">
+            <a href="https://www.flaticon.es/iconos-gratis/instagram" title="instagram iconos" class="text-muted" style="font-size: xx-small;">Instagram iconos creados por Freepik - Flaticon</a>
+          </span>
+        </a>
+      </div>
+      <!-- Columna 2 -->
+      <div class="col-md-6 my-3">
+        <!-- Enlace de Facebook -->
+        <a class="d-flex align-items-center" href="https://www.facebook.com/p/Soda-La-Uruca-La-Original-100064279840065/" target="facebook">
+          <img src="./assets/fotos logobanner/facebook.png" alt="Logo de Facebook" class="img-fluid" style="width: 35px; margin-right: 5px;">
+          <span class="text-muted small text-break">
+            <a href="https://www.flaticon.es/iconos-gratis/facebook" title="facebook iconos" class="text-muted" style="font-size: xx-small;">Facebook iconos creados por Stockio - Flaticon</a>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
 
-    <div class="row"> 
-
-        &copy; 2023 Soda La Uruca
-
+  <div class=" text-muted text-center text-small">
+    <p class="mb-1">&copy; 2023 Soda La Uruca</p>
+  </div>
 </footer>
 
+
+     
+  
 <script src="./bootstrap proyecto/js/bootstrap.bundle.min.js"></script>
 
 </body>
