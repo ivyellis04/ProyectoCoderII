@@ -5,13 +5,17 @@
    
     <title>Soda La Uruca</title>
     
-    <link rel="stylesheet" type="text/css" href="./estilo.css">
-
     <!--Iconos fontawesome-->
     <script src="https://kit.fontawesome.com/17a78ebd6f.js" crossorigin="anonymous"></script>
 
     <!-- favicon-->
     <link rel="icon" type="image/png" href="./Favicon/favicon.ico">
+
+    <!-- Link Boostrap-->
+    <link rel= "stylesheet" href="./bootstrap proyecto/css/bootstrap.css">
+
+    <!-- Link Css-->
+    <link rel="stylesheet" type="text/css" href="./estilo.css">
 
 </head>
 
@@ -19,68 +23,69 @@
 <body>
   
 <!-- inicio encabezado-->
-<header class="cabecera">
-   
-    <!-- inicio menu sitio -->
-    <nav class="menu_sitio_web">
-  
-      <!-- logo -->
-  
-      <div class="logo-banner">
-  
-          <img id="top" src="./assets/logov1.png" alt="logo sitio">
-  
-      </div>
-  
-      <ul>
-          <li class="link"><a href="index.html">Inicio</a></li>
-          <li class="link"><a href="conozcanos.html">Conóscanos</a></li>
-          <li class="link"><a href="menu.html">Menú</a></li>
-          <li class="link"><a href="mapa.html">¿Cómo llegar?</a></li>
-          <li class="link"><a href="contactenos.html">Contactenos</a></li>
-      </ul>
-  
-  
-    </nav>
-  
+<header>
+
+    <div class="container-fluid"> 
+ 
+         <!--inicio menu sitio-->
+ 
+         <nav class="navbar navbar-expand-lg colorFondoEspecial">
+         <div class= "container-fluid">
+ 
+         <!-- logo -->
+ 
+             <a class="navbar-brand" href="#"> <img src="./assets/fotos logobanner/menudesktop.png" alt="logo sitio"  width="70" height="30"></a> 
+ 
+          <!-- botón responsive -->    
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+ 
+             <span class="navbar-toggler-icon"> </span>
+ 
+             </button>
+ 
+             <div class="collapse navbar-collapse" id= "navbarNav">
+ 
+         <!--Links menu-->
+ 
+             <ul class= "navbar-nav nav nav-pills nav-justified me-auto mb-2 mb-1g-0 w-100 justify-content-between">
+ 
+                 <li class="nav-item"> 
+                     <a href="index.html"class="text-decoration-none colorPersonalizadoLinks">Inicio</a></li>
+ 
+                 <li class="nav-item">
+                      <a href="conozcanos.html" class="text-decoration-none colorPersonalizadoLinks">Conózcanos</a></li>
+ 
+                 <li class="nav-item text-decoration-none"> 
+                     <a href="menu.html" class="text-decoration-none colorPersonalizadoLinks">Menú</a></li>
+ 
+                 <li class="nav-item"> 
+                     <a href="mapa.html" class="text-decoration-none colorPersonalizadoLinks">¿Cómo llegar?</a></li>
+                     
+                 <li class="nav-item"> 
+                     <a href="contactenos.html"class="text-decoration-none colorPersonalizadoLinks">Contactenos</a></li>
+ 
+             </ul>  
+ 
+             </div>
+ 
+ </header>
 
 
  <!--Inicio de formulario -->
-    </div>
-    <div class="formulario_contacto">
-        <div id="contact_us">
-            <h1>Pedidos Especiales</h1>
-            <h2>¡Describamos su orden!</h2>
-            
-            <!-- formulario de pedidos -->
 
-            <form action="./error404.html" method="enviar">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                
-                <label for="apellidos">Apellidos:</label>
-                <input type="text" id="apellidos" name="apellidos" required>
-                
-                <label for="telefono">Número de teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
-                
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="comentario">Descripción de la orden:</label>
-                <textarea id="comentario" name="comentario" rows="4" required></textarea>
-                
-                <input type="enviar" value="Enviar">
 
-            </form>
-        </div>
-    </div>
+
 
 
     <!-- Footer  -->
-<footer class="footer">
-    <p>&copy; 2023 Soda La Uruca</p>
+<footer>
+    
+    <div class="row"> 
+
+        &copy; 2023 Soda La Uruca
 </footer>
+
+<script src="./bootstrap proyecto/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
