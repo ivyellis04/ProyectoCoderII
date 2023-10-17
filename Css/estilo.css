@@ -12,7 +12,6 @@
   }
   
 
-
 body {
     font-family: 'Crimson Text', serif;
     background-color: #fffbde;
@@ -88,6 +87,40 @@ a:hover {
     margin-right: 15px;
 }
 
+/*Animación*/
+
+html{
+    min-height: 100%;
+    overflow: hidden;
+  }
+ 
+  .line-1{
+      position: relative;
+      top: 50%;  
+      width: 24em;
+      margin: 0 auto;
+      border-right: 2px solid rgba(255,255,255,.75);
+      font-size: 180%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);    
+  }
+  
+  /* Animation */
+  .anim-typewriter{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 24em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
+
 /* Cambiar color en los enlaces */
 .navbar-nav > li > a {
     color: #D99962;
@@ -120,6 +153,7 @@ a:hover {
     color: #c14d06;
 }
 
+
 /* Área de introducción */
 .bg-custom {
     background-color: #F2EDD5;
@@ -130,8 +164,8 @@ a:hover {
 /* Pilares*/
 
 .img-fluid {
-    max-width: 100%; /* Ajusta el porcentaje según tus necesidades */
-    height: auto; /* Mantiene la proporción original de la imagen */
+    max-width: 100%; 
+    height: auto; 
 }
 
 
