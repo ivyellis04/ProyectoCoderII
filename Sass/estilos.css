@@ -1,0 +1,300 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+body {
+  font-family: "Crimson Text", serif;
+  background-color: #fffbde;
+}
+
+/* Enlaces */
+a:link {
+  color: #D99962;
+}
+
+a:hover {
+  color: #F26835;
+}
+
+/* Diseño  barra menú general */
+.colorFondoEspecial {
+  background-color: #F2CEA2;
+}
+
+.colorPersonalizadoLinks {
+  color: #c14d06;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-brand {
+  margin-left: 3rem;
+}
+
+.custom-navbar {
+  background-color: #FF5733;
+}
+
+/* Cambiar color en los enlaces */
+.navbar-nav > li > a {
+  color: #D99962;
+  margin-right: 15px;
+}
+
+.navbar-nav > li > a:hover {
+  color: #F26835;
+}
+
+/* Diseño página index */
+/* Área del banner */
+.banner {
+  background-image: url("./assets/fotos logobanner/banner3.png");
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.banner h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.banner p {
+  font-size: 18px;
+}
+
+.banner-container {
+  position: relative;
+  text-align: left;
+}
+
+.banner-img {
+  width: 100%;
+  max-height: 100%;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-nav > li > a {
+  margin-right: 15px;
+}
+
+/*Animación*/
+.linia-1 {
+  display: block;
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+.secondary-text-container {
+  opacity: 0;
+  text-align: center;
+  animation: fadeIn 2s forwards 5s;
+  top: 50%;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  overflow: hidden;
+  transform: translateY(-50%);
+  margin-bottom: 1em;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Área del banner */
+.banner-container {
+  position: relative;
+}
+
+.banner-img {
+  width: 100%;
+  max-height: 100%;
+}
+
+.textoBanner {
+  margin-top: 30px;
+  background-color: #fffbde;
+  color: #c14d06;
+}
+
+/* Área de introducción */
+.bg-custom {
+  background-color: #F2EDD5;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* Pilares*/
+/* Estilo para las imágenes */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilo para las imágenes con bordes curvos */
+.rounded-image {
+  border-radius: 20px;
+}
+
+/* Estilo para los contenedores de texto */
+.text-container {
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para los separadores */
+.featurette-divider {
+  border-top: 2px solid #ddd; /* Línea separadora */
+  margin: 40px 0; /* Espaciado entre elementos featurette */
+}
+
+/* Diseño página conozcanos */
+.img-fluid {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.agregandoPadding {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/*Carrusel*/
+/* Base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.centered-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: auto;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+/* rtl:end:ignore */
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+.featurette-heading {
+  letter-spacing: -0.05rem;
+}
+
+/* RESPONSIVE */
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+/* Diseño página mapa */
+.map-container {
+  position: relative;
+  padding-bottom: 75%;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Diseño página contactenos */
+.colorPaletaEspecial {
+  background-color: #F26835;
+  border-color: #F26835;
+  color: #fff;
+}
+
+footer {
+  background-color: #F2CEA2;
+  margin-top: 2em;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+footer .list-unstyled li {
+  margin-bottom: 0.5em;
+}
+
+/* Enlaces en el footer */
+footer a:link {
+  color: #D99962;
+}
+
+footer a:hover {
+  color: #F26835;
+}/*# sourceMappingURL=estilos.css.map */
