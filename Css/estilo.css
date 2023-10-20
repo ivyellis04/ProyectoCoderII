@@ -294,9 +294,8 @@ a:hover {
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   transition: filter 0.5s;
-  max-width: 50%; 
-  height: auto; 
-  
+  max-width: 100%;
+  height: auto;
 }
 
 .imagenesEspeciales:hover {
@@ -304,11 +303,11 @@ a:hover {
 }
 
 .imagenesEspeciales.grayscale {
-  filter: grayscale(100%); 
+  filter: grayscale(80%);
 }
 
-.image-wrapper:hover .imagenesEspeciales {
-  filter: grayscale(0%); 
+.image-container:hover .imagenesEspeciales {
+  filter: grayscale(0%);
 }
 
 
