@@ -1,9 +1,11 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
 body {
   font-family: "Oswald", sans-serif;
   background-color: #fffbde;
 }
 
+/* Enlaces */
 a:link {
   color: #D99962;
 }
@@ -12,6 +14,7 @@ a:hover {
   color: #F26835;
 }
 
+/* Diseño  barra menú general */
 .colorFondoEspecial {
   background-color: #F2CEA2;
 }
@@ -33,6 +36,7 @@ a:hover {
   background-color: #FF5733;
 }
 
+/* Cambiar color en los enlaces */
 .navbar-nav > li > a {
   color: #D99962;
   margin-right: 15px;
@@ -42,6 +46,8 @@ a:hover {
   color: #F26835;
 }
 
+/* Diseño página index */
+/* Área del banner */
 .banner {
   background-image: url("./assets/fotos logobanner/banner3.png");
   background-size: cover;
@@ -49,10 +55,12 @@ a:hover {
   text-align: center;
   padding: 100px 0;
 }
+
 .banner h1 {
   font-size: 36px;
   margin: 0;
 }
+
 .banner p {
   font-size: 18px;
 }
@@ -75,6 +83,7 @@ a:hover {
   margin-right: 15px;
 }
 
+/*Animación*/
 .linia-1 {
   position: relative;
   top: 50%;
@@ -86,8 +95,12 @@ a:hover {
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
+}
+
+.anim-typewriter {
   animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
 }
+
 @keyframes typewriter {
   from {
     width: 0;
@@ -104,7 +117,6 @@ a:hover {
     border-right-color: transparent;
   }
 }
-
 .secondary-text-container {
   opacity: 0;
   text-align: center;
@@ -116,6 +128,7 @@ a:hover {
   transform: translateY(-50%);
   margin-bottom: 1em;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -124,23 +137,43 @@ a:hover {
     opacity: 1;
   }
 }
+/* Área del banner */
+.banner-container {
+  position: relative;
+}
 
+.banner-img {
+  width: 100%;
+  max-height: 100%;
+}
+
+.textoBanner {
+  margin-top: 30px;
+  background-color: #fffbde;
+  color: #c14d06;
+}
+
+/* Área de introducción */
 .bg-custom {
   background-color: #F2EDD5;
   padding-bottom: 20px;
   border-radius: 10px;
 }
 
+/* Estilo para los separadores */
 .featurette-divider {
   border-top: 2px solid #ddd;
   margin: 40px 0;
 }
 
+/* Diseño página conozcanos */
+/*Estilo del encabezado*/
 .cover-heading {
   color: #000;
   position: relative;
   text-decoration: none;
 }
+
 .cover-heading::before {
   background: hsl(36, 72%, 69%);
   content: "";
@@ -151,57 +184,69 @@ a:hover {
   transition: transform 0.5s ease-in-out;
   z-index: -1;
 }
+
 .cover-heading:hover::before {
   transform: scaleX(1);
   transform-origin: left;
 }
 
+/*Carrusel*/
+/* Base class */
 .carousel {
   margin-bottom: 4rem;
 }
-.carousel .centered-image {
+
+.centered-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
   max-height: auto;
 }
-.carousel .carousel-caption {
+
+.carousel-caption {
   bottom: 3rem;
   z-index: 10;
 }
-.carousel .carousel-item {
+
+.carousel-item {
   height: 32rem;
 }
-.carousel .marketing .col-lg-4 {
+
+.marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
-.carousel .marketing .col-lg-4 p {
+
+.marketing .col-lg-4 p {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
 }
-.carousel .featurette-divider {
+
+.featurette-divider {
   margin: 5rem 0;
 }
-.carousel .featurette-heading {
+
+.featurette-heading {
   letter-spacing: -0.05rem;
 }
+
+/* RESPONSIVE */
 @media (min-width: 40em) {
-  .carousel .carousel-caption p {
+  .carousel-caption p {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
     line-height: 1.4;
   }
-  .carousel .featurette-heading {
+  .featurette-heading {
     font-size: 50px;
   }
 }
 @media (min-width: 62em) {
-  .carousel .featurette-heading {
+  .featurette-heading {
     margin-top: 7rem;
   }
 }
-
+/* Area de Historia*/
 .custom-border {
   background-color: #f2f2f2;
   border-radius: 20px;
@@ -223,35 +268,42 @@ a:hover {
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   transition: filter 0.5s;
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
 }
+
 .imagenesEspeciales:hover {
   filter: none;
 }
+
 .imagenesEspeciales.grayscale {
-  filter: grayscale(100%);
+  filter: grayscale(80%);
 }
-.image-wrapper:hover .imagenesEspeciales {
+
+.image-container:hover .imagenesEspeciales {
   filter: grayscale(0%);
 }
 
+/* Diseño página contactenos */
 .colorPaletaEspecial {
   background-color: #F26835;
   border-color: #F26835;
   color: #fff;
 }
 
+/*reviews*/
 .testimonial {
   margin: 0 20px 40px;
 }
+
 .testimonial .testimonial-content {
   padding: 35px 25px 35px 50px;
   margin-bottom: 35px;
   background: #fff;
   position: relative;
 }
-.testimonial .testimonial-content::before {
+
+.testimonial .testimonial-content:before {
   content: "";
   position: absolute;
   bottom: -30px;
@@ -260,7 +312,8 @@ a:hover {
   border-left: 15px solid transparent;
   border-bottom: 15px solid transparent;
 }
-.testimonial .testimonial-content::after {
+
+.testimonial .testimonial-content:after {
   content: "";
   position: absolute;
   bottom: -30px;
@@ -269,7 +322,8 @@ a:hover {
   border-right: 15px solid transparent;
   border-bottom: 15px solid transparent;
 }
-.testimonial .testimonial-content .testimonial-icon {
+
+.testimonial-content .testimonial-icon {
   width: 50px;
   height: 45px;
   background: #f38030;
@@ -281,7 +335,8 @@ a:hover {
   top: 37px;
   left: -19px;
 }
-.testimonial .testimonial-content .testimonial-icon::before {
+
+.testimonial-content .testimonial-icon:before {
   content: "";
   border-bottom: 16px solid #f38030;
   border-left: 18px solid transparent;
@@ -289,14 +344,16 @@ a:hover {
   top: -16px;
   left: 1px;
 }
-.testimonial .testimonial-content .description {
+
+.testimonial .description {
   font-size: 15px;
   font-style: italic;
   color: #8a8a8a;
   line-height: 23px;
   margin: 0;
 }
-.testimonial .testimonial-content .title {
+
+.testimonial .title {
   display: block;
   font-size: 18px;
   font-weight: 700;
@@ -305,32 +362,44 @@ a:hover {
   letter-spacing: 1px;
   margin: 0 0 5px 0;
 }
-.testimonial .testimonial-content .post {
+
+.testimonial .post {
   display: block;
   font-size: 14px;
   color: #f38030;
 }
-.testimonial .owl-theme .owl-controls {
+
+.owl-theme .owl-controls {
   margin-top: 20px;
 }
-.testimonial .owl-theme .owl-controls .owl-page span {
+
+.owl-theme .owl-controls .owl-page span {
   background: #ccc;
   opacity: 1;
   transition: all 0.4s ease 0s;
 }
 
+/*FOOTER*/
 footer {
   background-color: #F2CEA2;
   padding: 2em 0;
 }
+
 footer .list-unstyled li {
   margin-bottom: 0.5em;
 }
+
+/* Enlaces en el footer */
+footer a:link {
+  color: #D99962;
+}
+
 footer a:link,
 footer a:hover {
   color: #D99962;
   text-decoration: none;
 }
+
 footer .container-fluid {
   display: flex;
   justify-content: center;
@@ -338,6 +407,7 @@ footer .container-fluid {
        column-gap: 10px;
 }
 
+/*Página de Error*/
 .error-container {
   text-align: center;
 }/*# sourceMappingURL=estilos.css.map */
