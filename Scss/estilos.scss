@@ -9,6 +9,11 @@
 @media screen and (min-width: 769px) {
   }
   
+ //Variables// 
+$color_fondo: #D99962;
+$color_links:#F26835;
+$color_fondo_cartas:#faddac;
+
 
 body {
   font-family: 'Oswald', sans-serif;
@@ -17,11 +22,11 @@ body {
 
 /* Enlaces */
 a:link {
-    color: #D99962;
+    color:  $color_fondo;
 }
 
 a:hover {
-    color: #F26835;
+    color:$color_links;
 }
 
 /* Diseño  barra menú general */
@@ -271,44 +276,71 @@ a:hover {
   }
 
 
-/* Area de Historia*/
+// texto de Historia//
 
-.custom-border {
-  background-color: #f2f2f2;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+.paragraph-box {
+  border: none; 
   padding: 20px;
+  background-color: $color_fondo_cartas; 
+  border-radius: 5%;
+  
 }
 
-.textoEspecial {
-  padding: 10px;
-}
 
-.custom-image-container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.imagenesEspeciales {
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  transition: filter 0.5s;
-  max-width: 100%;
+.product-card {
+  border-radius: 14px;
+  background: #fbedc0;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  width: 300px;
   height: auto;
+  box-sizing:border-box ;
+
+  .header {
+      position: absolute;
+      z-index: 1;
+      top: 5px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      width: 100%;
+      padding: 0.75rem;
+      
+      p {
+          color: $color_fondo_cartas;
+          font-size: 12px;
+          margin: inherit;
+          text-transform: uppercase;
+          position: absolute;
+          text-align: center;
+      }
+      h4 {
+          color: $color_fondo_cartas;
+          margin: inherit;
+          text-transform: none;
+          font-size: 1.25rem;
+          font-weight: 600;
+      }
+  }
+  .card-img {
+      margin: 0px auto;
+      position: relative;
+      overflow: hidden;
+      max-width: 100%;
+      transition: transform 250ms ease 0ms, opacity 200ms ease-in 0ms;
+      img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          display: block;
+          max-width: 100%;
+      }
+  }
 }
 
-.imagenesEspeciales:hover {
-  filter: none;
-}
-
-.imagenesEspeciales.grayscale {
-  filter: grayscale(80%);
-}
-
-.image-container:hover .imagenesEspeciales {
-  filter: grayscale(0%);
-}
 
 
 /* Diseño página contactenos */

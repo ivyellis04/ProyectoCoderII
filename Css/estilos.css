@@ -246,42 +246,62 @@ a:hover {
     margin-top: 7rem;
   }
 }
-/* Area de Historia*/
-.custom-border {
-  background-color: #f2f2f2;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+.paragraph-box {
+  border: none;
   padding: 20px;
+  background-color: #faddac;
+  border-radius: 5%;
 }
 
-.textoEspecial {
-  padding: 10px;
+.product-card {
+  border-radius: 14px;
+  background: #fbedc0;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: auto;
+  box-sizing: border-box;
 }
-
-.custom-image-container {
+.product-card .header {
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  overflow: hidden;
+  width: 100%;
+  padding: 0.75rem;
 }
-
-.imagenesEspeciales {
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  transition: filter 0.5s;
+.product-card .header p {
+  color: #faddac;
+  font-size: 12px;
+  margin: inherit;
+  text-transform: uppercase;
+  position: absolute;
+  text-align: center;
+}
+.product-card .header h4 {
+  color: #faddac;
+  margin: inherit;
+  text-transform: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.product-card .card-img {
+  margin: 0px auto;
+  position: relative;
+  overflow: hidden;
   max-width: 100%;
-  height: auto;
+  transition: transform 250ms ease 0ms, opacity 200ms ease-in 0ms;
 }
-
-.imagenesEspeciales:hover {
-  filter: none;
-}
-
-.imagenesEspeciales.grayscale {
-  filter: grayscale(80%);
-}
-
-.image-container:hover .imagenesEspeciales {
-  filter: grayscale(0%);
+.product-card .card-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 /* Diseño página contactenos */
@@ -403,11 +423,10 @@ footer a:hover {
 footer .container-fluid {
   display: flex;
   justify-content: center;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
 }
 
 /*Página de Error*/
 .error-container {
   text-align: center;
-}/*# sourceMappingURL=estilos.css.map */
+}
