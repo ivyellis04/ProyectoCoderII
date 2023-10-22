@@ -14,7 +14,7 @@ a:hover {
   color: #F26835;
 }
 
-/* Diseño  barra menú general */
+/* Diseño barra menú general */
 .colorFondoEspecial {
   background-color: #F2CEA2;
 }
@@ -304,13 +304,6 @@ a:hover {
   max-width: 100%;
 }
 
-/* Diseño página contactenos */
-.colorPaletaEspecial {
-  background-color: #F26835;
-  border-color: #F26835;
-  color: #fff;
-}
-
 /*reviews*/
 .testimonial {
   margin: 0 20px 40px;
@@ -397,6 +390,50 @@ a:hover {
   background: #ccc;
   opacity: 1;
   transition: all 0.4s ease 0s;
+}
+
+/* Diseño página contactenos */
+.colorPaletaEspecial {
+  background-color: #F26835;
+  border-color: #F26835;
+  color: #fff;
+}
+
+.cardConozcanos {
+  margin: auto;
+  max-width: 600px;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
+.cardConozcanos-body {
+  text-align: left;
+}
+
+.cardMenu {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cardMenu img {
+  max-width: 90%;
+  height: auto;
+}
+
+.cardMenu .card-body {
+  padding: 20px;
+}
+
+/*  texto de las cartas */
+.cardMenu h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.cardMenu .card-text {
+  font-size: 1rem;
+  color: #555;
 }
 
 /*FOOTER*/

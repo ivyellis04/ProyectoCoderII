@@ -76,50 +76,48 @@
 <main>
 
  <!--Inicio de formulario -->
-
  <section class="py-5 text-center container">
   <div class="row py-lg-5">
     <div class="col-lg-6 col-md-8 mx-auto">
-
-  <h1 class="cover-heading cover-heading display-3">¿Necesitas un pedido especial?</h1>
-  <p class="text-center text-muted">Dejanos los datos y nosotros te contactamos.</p>
-
-</main>
-</div>  
+      <h1 class="cover-heading cover-heading display-3">¿Necesitas un pedido especial?</h1>
+      <p class="text-center text-muted">Déjanos tus datos y nosotros te contactamos.</p>
+    </div>
+  </div>
 </section>
-
 
 <section>
   <div class="container mx-auto mt-5">
-  <form action="./error404.html" method="POST">
-      <!-- Campo Nombre -->
-      <div class="form-group">
-          <label for="nombre">Nombre:</label>
-          <input type="text" class="form-control" id="nombre" name="nombre" required>
-      </div>
+    <div class="card cardConozcanos">
+      <div class="card-body pb-4">
+        <form action="./error404.html" method="POST">
+          <!-- Campo Nombre -->
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+          </div>
 
-      <!-- Campo Correo -->
-      <div class="form-group">
-          <label for="correo">Correo Electrónico:</label>
-          <input type="email" class="form-control" id="correo" name="correo" required>
-      </div>
+          <!-- Campo Correo -->
+          <div class="form-group">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" class="form-control" id="correo" name="correo" required>
+          </div>
 
-      <!-- Campo Teléfono -->
-      <div class="form-group">
-          <label for="telefono">Teléfono:</label>
-          <input type="tel" class="form-control" id="telefono" name="telefono" required>
-      </div>
+          <!-- Campo Teléfono -->
+          <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" class="form-control" id="telefono" name="telefono" required>
+          </div>
 
-      <!-- Campo Comentario -->
-      <div class="form-group">
-          <label for="comentario">Comentario:</label>
-          <textarea class="form-control" id="comentario" name="comentario" rows="4" required></textarea>
-      </div>
+          <!-- Campo Comentario -->
+          <div class="form-group">
+            <label for="comentario">Comentario:</label>
+            <textarea class="form-control" id="comentario" name="comentario" rows="4" required></textarea>
+          </div>
 
-      <!-- Campo Provincia (Desplegable) -->
-      <div class="form-group">
-          <label for="provincia">Provincia:</label>
-          <select class="form-control" id="provincia" name="provincia" required>
+          <!-- Campo Provincia (Desplegable) -->
+          <div class="form-group">
+            <label for="provincia">Provincia:</label>
+            <select class="form-control" id="provincia" name="provincia" required>
               <option value="" selected disabled>Seleccione una provincia</option>
               <option value="San Jose">San José</option>
               <option value="Alajuela">Alajuela</option>
@@ -128,14 +126,18 @@
               <option value="Guanacaste">Guanacaste</option>
               <option value="Puntarenas">Puntarenas</option>
               <option value="Limón">Limón</option>
-          </select>
-      </div>
+            </select>
+          </div>
 
-      <!-- Botón de Envío -->
-      <button type="submit" class="btn colorPaletaEspecial btn-block py-2">Enviar</button>
-  </form>
-</div>
+          <!-- Botón de Envío -->
+          <button type="submit" class="btn colorPaletaEspecial btn-block py-2 mt-3">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </section>
+
+
 
 
 <!-- Footer  -->
