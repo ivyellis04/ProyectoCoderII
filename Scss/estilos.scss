@@ -1,18 +1,15 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
 
-
 @media screen and (max-width: 768px) {   
-  }
-  
+  }  
 @media screen and (min-width: 769px) {
   }
   
  //Variables// 
-$color_fondo: #D99962;
-$color_links:#F26835;
-$color_fondo_cartas:#faddac;
+ $color_fondo: #D99962;
+ $color_links: #F26835;
+ $color_fondo_cartas: #faddac;
+
 
 
 body {
@@ -159,8 +156,8 @@ a:hover {
 }
 
 .banner-img {
-    width: 100%;
-    max-height: 100%;
+  max-width: 100% ;
+  height: auto ;
 }
 
 .textoBanner {
@@ -209,6 +206,18 @@ a:hover {
   transform: scaleX(1);
   transform-origin: left;
 }
+
+.cardConozcanos {
+  margin: auto;
+  max-width: 600px; 
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
+.cardConozcanos-body {
+  text-align: left; 
+}
+
 
 /*Carrusel*/
   
@@ -430,17 +439,10 @@ a:hover {
   color: #fff;
 }
 
-.cardConozcanos {
-  margin: auto;
-  max-width: 600px; 
-  padding: 20px;
-  margin-bottom: 60px;
+.colorBotonReset {
+  background-color:#faddac; 
+  color: #fff;
 }
-
-.cardConozcanos-body {
-  text-align: left; 
-}
-
 
 
 //página Antojitos//
@@ -506,5 +508,21 @@ footer .container-fluid {
 .error-container {
   
   text-align: center;
+}
+
+/* Estilo del botón */
+.error-btn {
+  background-color:$color_fondo_cartas;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none; 
+  border: none; 
+  border-radius: 5px; 
+}
+
+/* Hover del botón */
+.error-btn:hover {
+  background-color: #F26835; 
+  color: #fff; 
 }
 
