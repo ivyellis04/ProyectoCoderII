@@ -2,7 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
 @media (max-width: 768px) {
   .navbar-brand img {
-    max-width: 80px; /* Adjust the size as needed */
+    max-width: 80px;
+  }
+  .textoBanner {
+    font-size: 18px;
+  }
+  .secondary-text {
+    font-size: 14px;
+    max-width: 100%;
   }
   .carousel-caption h1 {
     font-size: 24px;
@@ -17,7 +24,7 @@
     width: 100%;
     height: auto;
   }
-  .footer {
+  .footerIndex {
     position: absolute;
     bottom: 0;
     width: 100%;
