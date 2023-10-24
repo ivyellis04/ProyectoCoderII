@@ -1,33 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
 
+
+//mobile// 
+
 @media (max-width: 768px) {
+
   .navbar-brand img {
     max-width: 80px; /* Adjust the size as needed */
   }
-}
 
-//carrusel mobile// 
-
-@media (max-width: 768px) {
   .carousel-caption h1 {
     font-size: 24px; 
   }
   .carousel-caption p {
     font-size: 14px; 
   }
-}
-
-/* Ensure the previous and next control buttons are more prominent on mobile */
-@media (max-width: 768px) {
   .carousel-control-prev, .carousel-control-next {
     font-size: 20px; 
   }
-}
 
-/* Maintain image aspect ratio */
 .centered-image {
   width: 100%;
   height: auto;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 }
 
   
