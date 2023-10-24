@@ -105,7 +105,8 @@
           <!-- Campo Teléfono -->
           <div class="form-group">
             <label for="telefono">Teléfono:</label>
-            <input type="tel" class="form-control" id="telefono" name="telefono" required>
+            <input type="tel" class="form-control" id="telefono" name="telefono" required pattern="[0-9]*">
+
           </div>
 
           <!-- Campo Comentario -->
@@ -130,8 +131,10 @@
           </div>
 
           <!-- Botón de Envío -->
-          <button type="submit" class="btn colorPaletaEspecial btn-block py-2 mt-3">Enviar</button>
-          <button type="reset" class="btn btn-block mt-3 colorBotonReset">Limpiar</button>
+      <button type="submit" class="btn colorPaletaEspecial btn-block py-2 mt-3">Enviar</button>
+          <!-- Botón Limpiar -->
+      <button type="reset" class="btn colorBotonReset btn-block mt-3">Limpiar</button>
+
 
         </form>
       </div>
