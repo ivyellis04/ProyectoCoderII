@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
 
-@media screen and (max-width: 768px) {   
-  }  
-@media screen and (min-width: 769px) {
+@media (max-width: 768px) {
+  .navbar-brand img {
+    max-width: 80px; /* Adjust the size as needed */
   }
+}
   
  //Variables// 
  $color_fondo: #D99962;
@@ -102,7 +103,7 @@ a:hover {
 
 /*Animación*/
 
-..linia-1 {
+.linia-1 {
   position: relative;
   top: 50%;
   width: 24em;

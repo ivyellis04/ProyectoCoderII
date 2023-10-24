@@ -1,5 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
+@media (max-width: 768px) {
+  .navbar-brand img {
+    max-width: 80px; /* Adjust the size as needed */
+  }
+}
 body {
   font-family: "Oswald", sans-serif;
   background-color: #fffbde;
@@ -135,6 +140,11 @@ a:hover {
   }
   to {
     opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .anim-typewriter {
+    animation: none !important;
   }
 }
 /* Área del banner */
