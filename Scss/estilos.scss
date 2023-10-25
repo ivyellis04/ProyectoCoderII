@@ -340,6 +340,19 @@ a:hover {
 // texto de Historia//
 
 
+.zoom {
+  padding: 20px;
+  background-color: $color_fondo;
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); 
+}
+
 .paragraph-box {
   border: none; 
   padding: 20px;
