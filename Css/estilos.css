@@ -171,6 +171,9 @@ a:hover {
   .anim-typewriter {
     animation: none !important;
   }
+  zoom {
+    animation: none !important;
+  }
 }
 /* Área del banner */
 .banner-container {
@@ -293,16 +296,16 @@ a:hover {
   }
 }
 .zoom {
-  padding: 20px;
+  padding: 5px;
   background-color: #D99962;
-  transition: transform 0.2s; /* Animation */
+  transition: transform 0.2s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
 }
 
 .zoom:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 .paragraph-box {
