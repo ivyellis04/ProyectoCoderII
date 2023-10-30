@@ -29,6 +29,29 @@
     bottom: 0;
     width: 100%;
   }
+  .carousel-item {
+    height: auto;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+  .featurette-heading {
+    font-size: 36px;
+  }
+  .carousel {
+    margin-bottom: 2rem;
+  }
+  .carousel-caption {
+    bottom: 1rem;
+  }
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+  .carousel-caption p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.3;
+  }
 }
 body {
   font-family: "Oswald", sans-serif;
@@ -201,7 +224,7 @@ a:hover {
 /* Estilo para los separadores */
 .featurette-divider {
   border-top: 2px solid #ddd;
-  margin: 40px 0;
+  margin: 20%;
 }
 
 /* Diseño página conozcanos */
@@ -242,7 +265,7 @@ a:hover {
 /*Carrusel*/
 /* Base class */
 .carousel {
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 .centered-image {
@@ -272,7 +295,7 @@ a:hover {
 }
 
 .featurette-divider {
-  margin: 5rem 0;
+  margin: 1rem 0;
 }
 
 .featurette-heading {
