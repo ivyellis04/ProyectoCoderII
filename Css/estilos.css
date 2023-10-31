@@ -11,15 +11,6 @@
     font-size: 14px;
     max-width: 100%;
   }
-  .carousel-caption h1 {
-    font-size: 24px;
-  }
-  .carousel-caption p {
-    font-size: 14px;
-  }
-  .carousel-control-prev, .carousel-control-next {
-    font-size: 20px;
-  }
   .centered-image {
     width: 100%;
     height: auto;
@@ -29,28 +20,20 @@
     bottom: 0;
     width: 100%;
   }
-  .carousel-item {
-    height: auto;
-  }
+}
+@media (min-width: 40em) {
   .carousel-caption p {
-    font-size: 1rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
   }
   .featurette-heading {
-    font-size: 36px;
+    font-size: 50px;
   }
-  .carousel {
-    margin-bottom: 2rem;
-  }
-  .carousel-caption {
-    bottom: 1rem;
-  }
-  .carousel-caption h1 {
-    font-size: 1.5rem;
-  }
-  .carousel-caption p {
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    line-height: 1.3;
+}
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
   }
 }
 body {
@@ -136,68 +119,6 @@ a:hover {
   margin-right: 15px;
 }
 
-/*Animación*/
-.linea-1 {
-  position: relative;
-  top: 50%;
-  width: 24em;
-  margin: 0 auto;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
-  font-size: 180%;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  transform: translateY(-50%);
-}
-
-.anim-typewriter {
-  animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
-}
-
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 24em;
-  }
-}
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
-.secondary-text-container {
-  opacity: 0;
-  text-align: center;
-  animation: fadeIn 2s forwards 5s;
-  top: 50%;
-  margin: 0 auto;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
-  overflow: hidden;
-  transform: translateY(-50%);
-  margin-bottom: 1em;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@media (max-width: 768px) {
-  .anim-typewriter {
-    animation: none !important;
-  }
-  zoom {
-    animation: none !important;
-  }
-}
 /* Área del banner */
 .banner-container {
   position: relative;
