@@ -48,16 +48,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
   
  //Variables// 
  $color_fondo: #D99962;
@@ -183,6 +173,20 @@ a:hover {
 .featurette-divider {
     border-top: 2px solid #ddd;
     margin: 20%; 
+}
+
+
+.zoom {
+  padding: 5px;
+  background-color: $color_links;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
 }
 
 
