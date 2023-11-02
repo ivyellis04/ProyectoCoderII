@@ -48,6 +48,16 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
   
  //Variables// 
  $color_fondo: #D99962;
@@ -283,18 +293,36 @@ a:hover {
 
 // texto de Historia//
 
-
-.zoom {
-  padding: 5px;
-  background-color: $color_fondo;
-  transition: transform .2s; 
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
+//Nuestra Historia //
+.product-card {
+  max-width: 100%;
 }
 
-.zoom:hover {
-  transform: scale(1.2); 
+.product-card .header {
+  text-align: center;
+}
+
+.product-card .card-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.paragraph-box {
+  padding: 20px;
+}
+
+.paragraph-box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.paragraph-box p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
 }
 
 .paragraph-box {
@@ -471,16 +499,25 @@ a:hover {
   padding: 20px;
 }
 
-  /*  texto de las cartas */
-
 .cardMenu h3 {
+  color: #c14d06;
   font-size: 1.5rem;
   margin-top: 10px;
 }
 
 .cardMenu .card-text {
   font-size: 1rem;
-  color: #555;
+  color: $color_fondo;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #F2CEA2;
+  padding: 2em 0;
+}
+
+footer .list-unstyled li {
+  margin-bottom: 0.5em;
 }
 
 
